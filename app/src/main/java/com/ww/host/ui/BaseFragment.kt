@@ -1,19 +1,15 @@
-package com.ww.easyplugin.ui
+package com.ww.host.ui
 
-import android.app.Activity
-import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
-import android.text.TextUtils
 import android.util.Log
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import androidx.fragment.app.Fragment
-import org.json.JSONObject
 
 /**
  * time：2022/10/19 下午3:43
- * author： weiwei
+ * author： WeiWei
  * description：
  **/
 class BaseFragment : Fragment() {

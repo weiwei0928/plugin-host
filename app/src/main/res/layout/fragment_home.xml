@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".ui.MainActivity">
+    android:orientation="vertical">
 
-    <TextView
-        android:text="HomeFragment"
+    <Button
+        android:id="@+id/btn_plugin_test"
+        android:text="插件测试"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

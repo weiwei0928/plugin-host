@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.layout_bottom_navigation_bar.*
 
 /**
  * time：2022/10/19 下午3:21
- * author： weiwei
+ * author： WeiWei
  * description：
  **/
 class MainActivity : AppCompatActivity() {

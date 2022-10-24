@@ -9,7 +9,7 @@ import com.ww.host.R
 
 /**
  * time：2022/10/19 下午3:38
- * author： weiwei
+ * author： WeiWei
  * description：
  **/
 class MineFragment: Fragment() {
@@ -19,4 +19,5 @@ class MineFragment: Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_mine, container, false)
     }
+
 }

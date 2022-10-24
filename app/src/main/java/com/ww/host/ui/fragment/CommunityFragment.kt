@@ -9,7 +9,7 @@ import com.ww.host.R
 
 /**
  * time：2022/10/19 下午3:38
- * author： weiwei
+ * author： WeiWei
  * description：
  **/
 class CommunityFragment: Fragment() {
