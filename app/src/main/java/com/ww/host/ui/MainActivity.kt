@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import com.ww.easyplugin.extension.setOnClickListener
+import com.ww.host.extension.setOnClickListener
 import com.ww.host.R
 import com.ww.host.ui.fragment.CommunityFragment
 import com.ww.host.ui.fragment.HomePageFragment

@@ -10,7 +10,6 @@ import com.ww.host.R
 import kotlinx.android.synthetic.main.activity_plugin.*
 import zeus.plugin.PluginManager
 import zeus.plugin.PluginUtil
-import zeus.plugin.ZeusBaseActivity
 import zeus.plugin.ZeusPlugin
 import java.io.FileOutputStream
 import java.io.InputStream
