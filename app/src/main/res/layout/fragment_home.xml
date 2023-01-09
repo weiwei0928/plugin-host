@@ -12,4 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
+    <Button
+        android:id="@+id/btn_plugin_test_so"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="插件加载so测试" />
+
 </LinearLayout>

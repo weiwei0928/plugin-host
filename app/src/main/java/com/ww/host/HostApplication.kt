@@ -3,6 +3,7 @@ package com.ww.host
 import android.app.Application
 import android.content.Context
 import com.ww.host.ui.TestPluginActivity.Companion.PLUGIN_SAMPLE1
+import com.ww.host.ui.fragment.HomePageFragment.Companion.PLUGIN_SO
 import zeus.plugin.PluginManager
 import java.util.HashMap
 
@@ -19,6 +20,7 @@ class HostApplication : Application() {
 
 
         defaultList[PLUGIN_SAMPLE1] = 1
+        defaultList[PLUGIN_SO] = 2
         PluginManager.init(this, defaultList)
     }
 }

@@ -3,9 +3,10 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
-        maven { url uri("/home/zzy/work/plugin/EasyPlugin/repo")}
+        maven { url uri("/home/zzy/work/plugin/EasyPlugin/EasyPlugin/repos/snapshots")}
         maven { url uri("/Users/weiwei/AndroidStudioProjects/EasyPlugin/EasyPlugin/repos/snapshots")}
         maven { url uri("/Users/weiwei/work/study/plugin/GradlePlugin/repo")}
+        maven { url uri("/home/zzy/work/plugin/GradlePlugin/repo")}
 
     }
 }
@@ -14,10 +15,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url uri("/home/zzy/work/plugin/EasyPlugin/repo")}
+        maven { url uri("/home/zzy/work/plugin/EasyPlugin/EasyPlugin/repos/snapshots")}
         maven { url uri("/Users/weiwei/AndroidStudioProjects/EasyPlugin/EasyPlugin/repos/snapshots")}
         maven { url uri("/Users/weiwei/work/study/plugin/GradlePlugin/repo")}
-
+        maven { url uri("/home/zzy/work/plugin/GradlePlugin/repo")}
     }
 }
 rootProject.name = "Plugin-host"
