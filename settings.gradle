@@ -3,10 +3,12 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        //本地maven路径
         maven { url uri("/home/zzy/work/plugin/EasyPlugin/repo")}
         maven { url uri("/Users/weiwei/AndroidStudioProjects/EasyPlugin/EasyPlugin/repos/snapshots")}
         maven { url uri("/Users/weiwei/work/study/plugin/GradlePlugin/repo")}
-
+        //jitpack.io
+        maven { url 'https://jitpack.io' }
     }
 }
 dependencyResolutionManagement {
@@ -14,10 +16,12 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        //本地maven路径
         maven { url uri("/home/zzy/work/plugin/EasyPlugin/repo")}
         maven { url uri("/Users/weiwei/AndroidStudioProjects/EasyPlugin/EasyPlugin/repos/snapshots")}
         maven { url uri("/Users/weiwei/work/study/plugin/GradlePlugin/repo")}
-
+        //jitpack.io
+        maven { url 'https://jitpack.io' }
     }
 }
 rootProject.name = "Plugin-host"
