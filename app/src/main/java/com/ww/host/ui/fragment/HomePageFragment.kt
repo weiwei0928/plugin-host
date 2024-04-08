@@ -11,6 +11,7 @@ import com.ww.host.R
 import com.ww.host.extension.logD
 import com.ww.host.ui.TestPluginActivity
 import kotlinx.android.synthetic.main.fragment_home.*
+import zeus.plugin.PluginManager
 
 /**
  * time：2022/10/19 下午3:38
@@ -20,6 +21,7 @@ import kotlinx.android.synthetic.main.fragment_home.*
 class HomePageFragment: Fragment() {
     companion object {
         private const val TAG = "HomePageFragment"
+        const val PLUGIN_SO = "plugin_so" //插件1
         fun newInstance() = HomePageFragment()
     }
 
@@ -40,6 +42,25 @@ class HomePageFragment: Fragment() {
         logD(TAG, "onViewCreated: ")
         btn_plugin_test.setOnClickListener {
             testPlugin()
+        }
+        btn_plugin_test_so.setOnClickListener {
+            startPlugin()
+        }
+    }
+
+    private fun startPlugin() {
+        PluginManager.loadLastVersionPlugin(PLUGIN_SO)
+        try {
+
+            var className = PluginManager.getPlugin(PLUGIN_SO).pluginMeta.mainClass
+            Log.d(TAG, "startPlugin: $className")
+            val cl: Class<*> = PluginManager.mNowClassLoader.loadClass(className)
+            val intent = Intent(activity, cl)
+//            startActivity(intent);
+            //这种方式为通过欺骗android系统的activity存在性校验的方式实现
+            PluginManager.startActivity(intent)
+        } catch (e: ClassNotFoundException) {
+            e.printStackTrace()
         }
     }
 }
